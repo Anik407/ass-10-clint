@@ -8,9 +8,10 @@ const Home = () => {
    
     return (
         <div>
-            <Banner></Banner>
+         
             <AllChef chef={chef}></AllChef>
-            This is home
+            <Banner></Banner>
+       
         </div>
     );
 };

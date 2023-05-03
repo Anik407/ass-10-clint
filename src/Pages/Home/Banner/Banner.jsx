@@ -4,7 +4,7 @@ import React from 'react';
 const Banner = () => {
     return (
         <div  className='m-5 slider'>
-        <div className="h-56 md:h-[1200px]">
+        <div className="h-56  lg:h-96">
   <Carousel>
     <img 
       src="https://img.freepik.com/premium-photo/stir-fry-chicken-zucchini-sweet-peppers-green-onion_2829-3740.jpg?w=1380"

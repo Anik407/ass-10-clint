@@ -4,6 +4,7 @@ import { FcLike } from "react-icons/Fc";
 import { RxCookie } from "react-icons/Rx";
 import { MdDateRange } from "react-icons/Md";
 import ChefDetailsCard from './ChefDetailsCard/ChefDetailsCard';
+import LazyLoad from 'react-lazy-load';
 
 
 
@@ -17,7 +18,9 @@ const ChefDetails = () => {
             <div className='grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 container mx-auto p-1'>
 
                 <div>
-                    <img className='rounded-full shadow-2xl' src={chef_picture} alt="" />
+                    <LazyLoad>
+                        <img className='rounded-full shadow-2xl' src={chef_picture} alt="" />
+                    </LazyLoad>
                 </div>
 
                 <div className='mx-3 shadow-2xl rounded-lg p-5 md:p-28'>
@@ -42,11 +45,11 @@ const ChefDetails = () => {
 
 
             <div className='my-10'>
-               <h1 className='text-5xl text-center font-bold py-10'>Recipes</h1>
+                <h1 className='text-5xl text-center font-bold py-10'>Recipes</h1>
 
-              <div className='grid grid-cols-1 md:grid-cols-2 gap-3'>
-              {recipes.map(cooks=> <ChefDetailsCard cooks={cooks} key={cooks.name}></ChefDetailsCard>) }
-              </div>
+                <div className='grid grid-cols-1 md:grid-cols-2 gap-3'>
+                    {recipes.map(cooks => <ChefDetailsCard cooks={cooks} key={cooks.name}></ChefDetailsCard>)}
+                </div>
 
             </div>
         </section>
