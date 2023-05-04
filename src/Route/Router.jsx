@@ -6,6 +6,7 @@ import ErrorPage from "../ErrorPage/ErrorPage";
 import Login from "../Pages/Login/Login";
 import Blog from "../Pages/Blog/blog";
 import Registration from "../Pages/Registration/Registration";
+import PrivateRoute from "./PrivateRoute/PrivateRoute";
 
 
 
@@ -22,7 +23,7 @@ const router = createBrowserRouter([
             },
             {
                 path: "/dashes/:id",
-                element: <ChefDetails></ChefDetails>,
+                element:<PrivateRoute> <ChefDetails></ChefDetails>,</PrivateRoute>,
                 loader: ({ params }) => fetch(`https://ass-10-anik407.vercel.app/dashes/${params.id}`)
             },
             {
@@ -40,7 +41,8 @@ const router = createBrowserRouter([
             {
                 path: "/registration",
                 element :<Registration></Registration>
-            }
+            },
+     
 
 
         ],

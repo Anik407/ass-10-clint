@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Rating from 'react-rating';
-import { FaRegStar, FaStar } from "react-icons/Fa";
+import { FaRegStar, FaStar } from "react-icons/fa";
 import { FcLike } from "react-icons/Fc";
 import { toast } from 'react-toastify';
 import LazyLoad from 'react-lazy-load';
