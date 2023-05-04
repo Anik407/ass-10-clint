@@ -1,7 +1,7 @@
 # b7a10-chef-recipe-hunter-client-side-Anik407
 b7a10-chef-recipe-hunter-client-side-Anik407 created by GitHub Classroom
 
-*Live 
+*Live https://assignment-10-2b558.web.app
 *SERVER :https://github.com/programming-hero-web-course-4/b7a10-chef-recipe-hunter-server-side-Anik407
 
 
