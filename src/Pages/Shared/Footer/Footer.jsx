@@ -12,7 +12,7 @@ const Footer = () => {
                             src="https://img.freepik.com/free-vector/detailed-chef-logo-template_23-2148987940.jpg?w=826&t=st=1683024078~exp=1683024678~hmac=49adf532af0306b29a02744b0bc49a571dcd2b3c2f177305218c05cdd0a99bab"
 
                             class="h-8 mr-3" alt="Flowbite Logo" />
-                 <h1 className='text-2xl'>       <span className='text-orange-400'> Cook's</span> <span className='text-lime-300'>Corner</span></h1>
+                 <h1 className='text-2xl'>       <span className='text-orange-400'> Cook's</span> <span className='text-lime-300'>Corner</span> </h1>
 
                     </a>
                     <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
