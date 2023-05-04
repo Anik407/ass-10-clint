@@ -16,7 +16,7 @@ const Header = () => {
             alt="Flowbite Logo"
           />
           <span className="self-center whitespace-nowrap lg:text-3xl font-bold dark:text-white">
-            Cook's Corner
+          <span className='text-orange-400'> Cook's</span> <span className='text-lime-300'>Corner</span>
           </span>
         </Navbar.Brand>
         <div className="flex md:order-2">

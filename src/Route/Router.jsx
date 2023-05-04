@@ -14,6 +14,7 @@ const router = createBrowserRouter([
     {
         path: "/",
         element: <Main></Main>,
+        errorElement:<ErrorPage></ErrorPage>,
         children: [
             {
                 path: "/",
@@ -25,10 +26,7 @@ const router = createBrowserRouter([
                 element: <ChefDetails></ChefDetails>,
                 loader: ({ params }) => fetch(`https://ass-10-anik407.vercel.app/dashes/${params.id}`)
             },
-            {
-                path: "*",
-                element: <ErrorPage></ErrorPage>
-            },
+          
             {
                 path: "/login",
                 element: <Login></Login>

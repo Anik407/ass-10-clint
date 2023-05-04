@@ -13,13 +13,13 @@ const Login = () => {
                     <img className='w-96 md:ms-24   '
                             src="https://img.freepik.com/free-vector/detailed-chef-logo-template_23-2148987940.jpg?w=826&t=st=1683024078~exp=1683024678~hmac=49adf532af0306b29a02744b0bc49a571dcd2b3c2f177305218c05cdd0a99bab" alt="Flowbite Logo" />
                     </LazyLoad>
-                        <h1 className="ps-14 md:ps-24 mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">Cook's Corner</h1>
+                        <h1 className="ps-14 md:ps-24 mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">   <span className='text-orange-400'> Cook's</span> <span className='text-lime-300'>Corner</span></h1>
                     
                     </div>
                     <div className=''>
                         <div className="w-full lg:max-w-xl p-6 space-y-8 sm:p-8 bg-white rounded-lg shadow-xl dark:bg-gray-800">
                             <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
-                                Log In to Cook's Corner
+                                Log In to    <span className='text-orange-400'> Cook's</span> <span className='text-lime-300'>Corner</span>
                             </h2>
                             <form className="mt-8 space-y-6" action="#">
                                 <div className='shadow-2xl shadow-lime-300  '>
