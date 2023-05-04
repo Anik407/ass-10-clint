@@ -1,16 +1,13 @@
 import { Navbar, Dropdown } from 'flowbite-react';
 import React from 'react';
 import { Link } from 'react-router-dom';
+import ActiveLink from './ActiveLink/ActiveLink';
 
-const ActiveLink = ({ to, children }) => (
-  <Link to={to} className="mx-4 py-2 text-gray-700 hover:text-gray-900">
-    {children}
-  </Link>
-);
+
 
 const Header = () => {
   return (
-    <div className='container md mx-auto'>
+    <div className='container md mx-auto  '>
       <Navbar fluid={true} rounded={true}>
         <Navbar.Brand href="https://flowbite.com/">
           <img
@@ -26,7 +23,9 @@ const Header = () => {
           <Dropdown
             arrowIcon={false}
             inline={true}
-            label={<img src="https://flowbite.com/docs/images/people/profile-picture-5.jpg" alt="User settings" className="rounded-full h-8" />}
+            label={         <ActiveLink to="/login">
+            <span className="lg:text-2xl">Log In</span>
+          </ActiveLink>}
           >
             <Dropdown.Header>
               <span className="block text-sm">Bonnie Green</span>
@@ -41,8 +40,9 @@ const Header = () => {
           <ActiveLink to="/blog">
             <span className="lg:text-2xl">Blog</span>
           </ActiveLink>
-          <ActiveLink to="/login">
-            <span className="lg:text-2xl">Log In</span>
+
+          <ActiveLink to="/registration">
+            <span className="lg:text-2xl">Registration </span>
           </ActiveLink>
         </Navbar.Collapse>
       </Navbar>

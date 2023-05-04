@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { FcLike } from "react-icons/Fc";
 import { RxCookie } from "react-icons/Rx";
@@ -6,16 +6,19 @@ import { MdDateRange } from "react-icons/Md";
 import LazyLoad from 'react-lazy-load';
 
 const ChefCards = ({ cd }) => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+   }, [])
 
     const { id, chef_picture, bio, num_recipes, likes_num, years_of_experience, chef_name } = cd;
 
     return (
-        <div className='shadow-2xl'>
+        <div className='shadow-2xl shadow-lime-300 '>
             <div
                 style={{ height: '750px' }}
-                className=" max-w-2xl bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+                className=" bg-lime-100 max-w-2xl border border-lime-700 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
             >
-                <LazyLoad  >
+                <LazyLoad  threshold={0.95} onContentVisible={() => {console.log('loaded!')}} >
                     <img className="rounded-t-lg" src={chef_picture} />
                 </LazyLoad>
                 <div className="p-5">

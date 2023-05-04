@@ -15,15 +15,15 @@ const ChefDetails = () => {
 
     return (
         <section>
-            <div className='grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 container mx-auto p-1'>
+            <div className='mt-10 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 container mx-auto p-1'>
 
                 <div>
-                    <LazyLoad>
-                        <img className='rounded-full shadow-2xl' src={chef_picture} alt="" />
+                    <LazyLoad  threshold={0.95} onContentVisible={() => {console.log('loaded!')}}>
+                        <img className='shadow-2xl shadow-lime-300   rounded-full shadow-2xl' src={chef_picture} alt="" />
                     </LazyLoad>
                 </div>
 
-                <div className='mx-3 shadow-2xl rounded-lg p-5 md:p-28'>
+                <div className='shadow-2xl shadow-lime-300   mx-3  rounded-lg p-5 md:p-28'>
                     <h1 className='text-2xl font-bold'>  {chef_name}</h1>
                     <p className='font-semibold text-slate-700'> {bio}</p>
 

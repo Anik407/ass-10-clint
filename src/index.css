@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.LazyLoad {
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+
+.is-visible {
+    opacity: 1;
+}
+
+
+.active{
+    color: rgb(185, 226, 158);
+}

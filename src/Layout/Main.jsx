@@ -7,7 +7,7 @@ import Header from '../Pages/Shared/Header/Header';
 const Main = () => {
     return (
         <div>
-            <Header></Header>
+         <div className='shadow-2xl shadow-lime-100  '>   <Header></Header></div>
             <Outlet></Outlet>
             <ToastContainer />
         </div>

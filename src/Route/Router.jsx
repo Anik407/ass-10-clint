@@ -4,6 +4,8 @@ import Home from "../Pages/Home/Home";
 import ChefDetails from "../Pages/Home/AllChef/ChefDetails/ChefDetails";
 import ErrorPage from "../ErrorPage/ErrorPage";
 import Login from "../Pages/Login/Login";
+import Blog from "../Pages/Blog/blog";
+import Registration from "../Pages/Registration/Registration";
 
 
 
@@ -11,7 +13,7 @@ import Login from "../Pages/Login/Login";
 const router = createBrowserRouter([
     {
         path: "/",
-        element:<Main></Main>,
+        element: <Main></Main>,
         children: [
             {
                 path: "/",
@@ -19,16 +21,25 @@ const router = createBrowserRouter([
                 loader: () => fetch('https://ass-10-anik407.vercel.app/dashes')
             },
             {
-                path:"/dashes/:id",
-                element :<ChefDetails></ChefDetails>,
-                loader : ({params})=>fetch(`https://ass-10-anik407.vercel.app/dashes/${params.id}`)
+                path: "/dashes/:id",
+                element: <ChefDetails></ChefDetails>,
+                loader: ({ params }) => fetch(`https://ass-10-anik407.vercel.app/dashes/${params.id}`)
             },
             {
-                path:"*",
-                element : <ErrorPage></ErrorPage>
-            },{
-                path : "/login",
-                element : <Login></Login>
+                path: "*",
+                element: <ErrorPage></ErrorPage>
+            },
+            {
+                path: "/login",
+                element: <Login></Login>
+            },
+            {
+                path :"/blog",
+                element: <Blog></Blog>
+            },
+            {
+                path: "/registration",
+                element :<Registration></Registration>
             }
 
 

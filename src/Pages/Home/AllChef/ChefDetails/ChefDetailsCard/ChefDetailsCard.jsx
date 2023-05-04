@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Rating from 'react-rating';
 import { FaRegStar, FaStar } from "react-icons/Fa";
 import { FcLike } from "react-icons/Fc";
@@ -9,6 +9,9 @@ import LazyLoad from 'react-lazy-load';
 
 
 const ChefDetailsCard = ({ cooks }) => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+   }, [])
 
     const [active, setActive] = useState(false)
 
@@ -21,10 +24,10 @@ const ChefDetailsCard = ({ cooks }) => {
 
     const { name, img, ingredients, method, rating } = cooks
     return (
-        <div className='shadow-2xl p-5 rounded-lg'>
+        <div className='bg-lime-50 shadow-2xl shadow-lime-300   p-5 rounded-lg'>
             
             <div >
-                <LazyLoad >
+                <LazyLoad  threshold={0.95} onContentVisible={() => {console.log('loaded!')}}>
                 <img className='rounded-lg' src={img} alt="" />
                 </LazyLoad>
             </div>
