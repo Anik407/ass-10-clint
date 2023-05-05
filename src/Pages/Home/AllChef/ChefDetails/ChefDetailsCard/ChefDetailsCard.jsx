@@ -66,7 +66,7 @@ const ChefDetailsCard = ({ cooks }) => {
 
                 <div>
                     <button onClick={HandelLike} disabled={active} > {
-                        active ? <button class=" cursor-not-allowed">
+                        active ? <button className=" cursor-not-allowed">
                         <FcLike className='text-5xl'></FcLike>
                         </button> : <>
                             <button class="bg-transparent hover:bg-blue-500

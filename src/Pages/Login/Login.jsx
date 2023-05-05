@@ -9,7 +9,7 @@ const Login = () => {
     const [error, setError] = useState('')
     const navigate = useNavigate()
     const location = useLocation()
-    console.log(location);
+   
     const from = location.state?.from?.pathname || '/';
 
     const handleLogin = (event) => {
@@ -33,7 +33,9 @@ const Login = () => {
     const handleGoogleSignIn = () => {
         googleSignIn()
             .then(result => {
-                console.log(result.user);
+                
+                const LoggedUser = result.user;
+                console.log(LoggedUser);
                 navigate(from)
             })
             .catch(error => {
@@ -44,7 +46,8 @@ const Login = () => {
     const handleGithubSignIn = () => {
         githubSignIn()
             .then(result => {
-                console.log(result.user);
+                const LoggedUser = result.user;
+                console.log(LoggedUser);
                 navigate(from)
             })
             .catch(error => {

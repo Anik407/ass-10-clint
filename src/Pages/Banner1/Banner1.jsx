@@ -9,7 +9,7 @@ const Banner1 = () => {
                     <h1 className='my-2 text-4xl md:text-6xl font-bold'>
                         <span className='text-orange-400'> Cook's</span> <span className='text-lime-300'>Corner</span>
                     </h1>
-                    <h2 className='text-2xl font-semibold'>Discover the Ultimate Destination for Foodies:    <span className='text-orange-400'> Cook's</span> <span className='text-lime-300'>Corner</span> - Your Go-To Site for Mouth-Watering Recipes, Culinary Tips, and Delicious Inspiration!</h2>
+                    <h2 className='text-2xl font-semibold'>Discover the Ultimate Destination for Foodies:    <span className='text-lime-300'>Corner</span> - Your Go-To Site for <span className='text-orange-400'>Chinese </span>  Recipes, Culinary Tips, and Delicious Inspiration!</h2>
                 </div>
                 <div className="h-56  lg:h-96">
                     <Carousel>

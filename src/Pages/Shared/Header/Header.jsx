@@ -1,9 +1,10 @@
-import { Navbar, Dropdown, Tooltip, Avatar } from 'flowbite-react';
+import { Navbar, Dropdown, Avatar } from 'flowbite-react';
 import React, { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
 import ActiveLink from './ActiveLink/ActiveLink';
 import { AuthContext } from '../../../Provider/AuthProvider';
-
+import { Tooltip } from 'react-tooltip';
+import 'react-tooltip/dist/react-tooltip.css';
 
 
 const Header = () => {
