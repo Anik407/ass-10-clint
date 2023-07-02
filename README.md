@@ -1,6 +1,6 @@
 
 *Live https://assignment-10-2b558.web.app
-*SERVER :https://github.com/Anik407/Cook-s-Corner-server
+*SERVER :https://github.com/kamrulhasananik019/Cook-s-Corner-server
 
 
 
